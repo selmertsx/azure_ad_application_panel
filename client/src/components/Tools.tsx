@@ -1,8 +1,16 @@
 import * as React from "react";
+interface ToolsProps { }
 
-export const Tools = () => (
-  <div>
-    <h2>Tools</h2>
-    <p>Tool一覧だでよ</p>
-  </div>
-)
+export class Tools extends React.Component<ToolsProps> {
+  constructor(props: ToolsProps){
+    super(props);
+  }
+
+  public render(){
+    return(
+      <div>
+        This is Tools
+      </div>
+    );
+  }
+};
