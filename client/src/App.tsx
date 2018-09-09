@@ -1,5 +1,5 @@
 import * as React from "react";
-import { ConnectedRouter as Router } from 'react-router-redux'
+import { BrowserRouter, Link, Route } from 'react-router-dom'
 
 export class App extends React.Component {
   public render() {
