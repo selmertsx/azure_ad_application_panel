@@ -1,4 +1,5 @@
 import * as React from "react";
+import { ConnectedRouter as Router } from 'react-router-redux'
 
 export class App extends React.Component {
   public render() {
