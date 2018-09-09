@@ -11,6 +11,8 @@
   "devDependencies": {
     "@types/react": "^16.4.13",
     "@types/react-dom": "^16.0.7",
+    "@types/react-redux": "^6.0.7",
+    "@types/redux": "^3.6.0",
     "awesome-typescript-loader": "^5.2.0",
     "config": "^2.0.1",
     "typescript": "^3.0.1",
@@ -21,6 +23,8 @@
   "dependencies": {
     "@microsoft/microsoft-graph-client": "^1.2.0",
     "react": "^16.4.2",
-    "react-dom": "^16.4.2"
+    "react-dom": "^16.4.2",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.0"
   }
 }

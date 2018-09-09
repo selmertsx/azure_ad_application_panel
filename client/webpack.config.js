@@ -4,7 +4,6 @@ const config = require('config') //どうやら環境変数を簡単にimportで
 module.exports = {
   mode: 'development',
   entry: './src/App.tsx',
-
   resolve: {
     modules: ['src', 'node_modules'], // 対象のフォルダ
     extensions: [".ts", ".tsx", ".js", ".json"]
@@ -25,6 +24,5 @@ module.exports = {
     inline: true,
     port: config.get('PORT') + 1,
     host: '0.0.0.0',
-  },
-
+  }
 }
