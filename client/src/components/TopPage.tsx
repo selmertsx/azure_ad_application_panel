@@ -1,10 +1,14 @@
 import * as React from "react";
 
+interface TopPageProps { }
 
-
-export const TopPage = () => (
-  <div>
-    <h2>Home</h2>
-    <p>Welcome to ようこそ</p>
-  </div>
-)
+export class TopPage extends React.Component<TopPageProps> {
+  public render() {
+    return(
+      <div>
+        <h2>Home</h2>
+        <p>Welcome to ようこそ</p>
+      </div>
+    )
+  }
+}

@@ -9,7 +9,8 @@ export class Tools extends React.Component<ToolsProps> {
   public render(){
     return(
       <div>
-        This is Tools
+        <h2>Tools</h2>
+        <p>This is Tools</p>
       </div>
     );
   }
