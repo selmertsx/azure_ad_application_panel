@@ -7,12 +7,12 @@ const initialState: ToolState = {
 
 export function toolsReducer(state: ToolState = initialState, action: ToolAction): ToolState {
   switch (action.type) {
-    case "INPUT_TASK":
+    case "INPUT_TOOL":
       return {
         ...state,
         tool: action.payload.tool
       };
-    case "ADD_TASK":
+    case "ADD_TOOL":
       return {
         ...state,
         tools: state.tools.concat([action.payload.tool])
