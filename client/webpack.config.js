@@ -1,12 +1,18 @@
+const path = require('path')
+const config = require('config') //どうやら環境変数を簡単にimportできるようになるようだ
+
 module.exports = {
   mode: 'development',
   entry: './src/App.tsx',
-  output: {
-    filename: 'bundle.js',
-    path: __dirname + "/dist"
-  },
+
   resolve: {
+    modules: ['src', 'node_modules'], // 対象のフォルダ
     extensions: [".ts", ".tsx", ".js", ".json"]
+  },
+
+  output: {
+    publicPath: '/', // デフォルトルートにしないとHMRは有効にならない
+    filename: 'bundle.js'
   },
   module: {
     rules: [
@@ -21,4 +27,5 @@ module.exports = {
     port: config.get('PORT') + 1, // 起動ポート,
     host: '0.0.0.0',
   },
+
 }
