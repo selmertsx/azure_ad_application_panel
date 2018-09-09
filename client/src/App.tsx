@@ -1,28 +1,21 @@
 import * as React from "react";
 import { BrowserRouter, Link, Route } from 'react-router-dom'
 import { TopPage } from "./components/TopPage";
+import { Tools } from "./components/Tools";
 
 const App = () => (
   <BrowserRouter>
     <div>
       <ul>
         <li><Link to="/">TopPage</Link></li>
-        <li><Link to="/about">About</Link></li>
+        <li><Link to="/tools">Tools</Link></li>
       </ul>
 
       <hr />
-
       <Route exact={true} path='/' component={TopPage} />
-      <Route path='/about' component={About} />
+      <Route path='/tools' component={Tools} />
     </div>
   </BrowserRouter>
-)
-
-const About = () => (
-  <div>
-    <h2>About</h2>
-    <p>フレンズに投票するページです</p>
-  </div>
 )
 
 export { App }
