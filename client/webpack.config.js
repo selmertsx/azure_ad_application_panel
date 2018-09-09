@@ -20,11 +20,10 @@ module.exports = {
     ]
   },
   devServer: {
-    contentBase: path.join(__dirname, '/src/static'), // index.htmlの格納場所
-    historyApiFallback: true, // history APIが404エラーを返す場合にindex.htmlに飛ばす
-    inline: true, // ソース変更時リロードモード
-    hot: true, // HMR(Hot Module Reload)モード
-    port: config.get('PORT') + 1, // 起動ポート,
+    contentBase: path.join(__dirname, '/src/static'),
+    historyApiFallback: true,
+    inline: true,
+    port: config.get('PORT') + 1,
     host: '0.0.0.0',
   },
 
