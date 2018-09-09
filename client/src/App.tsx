@@ -1,7 +1,6 @@
 import * as React from "react";
-import * as ReactDOM from "react-dom";
 
-class App extends React.Component {
+export class App extends React.Component {
   public render() {
     const tasks = [{ title: "TODO１つ目", id: 0 }];
     return(
@@ -16,8 +15,3 @@ class App extends React.Component {
     );
   }
 }
-
-ReactDOM.render(
-  <App />,
-  document.getElementById("root")
-);

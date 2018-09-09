@@ -3,7 +3,7 @@ const config = require('config') //どうやら環境変数を簡単にimportで
 
 module.exports = {
   mode: 'development',
-  entry: './src/App.tsx',
+  entry: './src/index.tsx',
   resolve: {
     modules: ['src', 'node_modules'], // 対象のフォルダ
     extensions: [".ts", ".tsx", ".js", ".json"]
