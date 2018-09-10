@@ -1,7 +1,7 @@
 import * as React  from "react";
 import { BrowserRouter, Link, Route } from 'react-router-dom'
-import { TopPage } from "./components/TopPage";
-import { Tools } from "./components/Tools";
+import { TopPage } from "./TopPage";
+import { Tools } from "./Tools";
 
 interface AppState { }
 interface AppProps { }

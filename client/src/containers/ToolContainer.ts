@@ -2,7 +2,7 @@ import { connect } from "react-redux";
 import { Dispatch } from "redux";
 
 import { addTool, inputTool } from "../actions/tools";
-import { Tools } from "../components/Tools";
+import { App } from "../components/App";
 import { ToolAction, ToolState } from "../Types";
 
 function mapStateToProps({ tool, tools }: ToolState): ToolState {
@@ -19,9 +19,7 @@ function mapDispatchToProps(dispatch: Dispatch<ToolAction>) {
   };
 }
 
-const ToolContainer = connect(
+export const ToolContainer = connect(
   mapStateToProps,
   mapDispatchToProps
-)(Tools);
-
-export { ToolContainer };
+)(App);
