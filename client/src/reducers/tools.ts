@@ -5,7 +5,7 @@ const initialState: ToolState = {
   tools: []
 };
 
-export function toolsReducer(state: ToolState = initialState, action: ToolAction): ToolState {
+export function toolReducer(state: ToolState = initialState, action: ToolAction): ToolState {
   switch (action.type) {
     case "INPUT_TOOL":
       return {
