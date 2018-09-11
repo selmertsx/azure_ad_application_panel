@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "@microsoft/microsoft-graph-client": "^1.2.0",
+    "adal-node": "^0.1.28",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
     "react-redux": "^5.0.7",
