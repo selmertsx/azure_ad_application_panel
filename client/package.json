@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/adal": "^1.0.29",
     "@types/react": "^16.4.13",
     "@types/react-dom": "^16.0.7",
     "@types/react-redux": "^6.0.7",
