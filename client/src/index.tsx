@@ -6,14 +6,14 @@ import { render } from "react-dom";
 import { Provider } from 'react-redux';
 import { createStore, Store } from "redux";
 import { toolReducer } from './reducers/tools';
-import { ToolContainer } from "./containers/ToolContainer";
+import { AppContainer } from "./containers/AppContainer";
 
 const store: Store = createStore(toolReducer);
 
 function renderApp(store: Store) {
   render(
     <Provider store={store}>
-      <ToolContainer/>
+      <AppContainer/>
     </Provider>,
     document.getElementById("root")
   );

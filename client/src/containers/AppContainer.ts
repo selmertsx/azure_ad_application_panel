@@ -19,7 +19,7 @@ function mapDispatchToProps(dispatch: Dispatch<ToolAction>) {
   };
 }
 
-export const ToolContainer = connect(
+export const AppContainer = connect(
   mapStateToProps,
   mapDispatchToProps
 )(App);
