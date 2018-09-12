@@ -3,12 +3,7 @@ import { BrowserRouter, Link, Route } from 'react-router-dom'
 import { TopPage } from "./TopPage";
 import { Tools } from "./Tools";
 
-interface AppProps {
-  tool: string,
-  tools: string[]
-}
-
-class App extends React.Component<AppProps> {
+class App extends React.Component {
   public render() {
     return(
       <BrowserRouter>
@@ -19,7 +14,7 @@ class App extends React.Component<AppProps> {
           </ul>
 
           <hr />
-          <Route exact={true} path='/' component={TopPage} />
+          <Route exact={true} path='/' component={TopPage}  />
           <Route path='/tools' component={Tools} />
         </div>
       </BrowserRouter>

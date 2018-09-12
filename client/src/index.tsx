@@ -19,4 +19,5 @@ function renderApp(store: Store) {
   );
 }
 
+store.subscribe(() => renderApp(store));
 renderApp(store);
