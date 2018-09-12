@@ -3,10 +3,8 @@ import { BrowserRouter, Link, Route } from 'react-router-dom'
 import { TopPage } from "./TopPage";
 import { Tools } from "./Tools";
 
-interface AppState { }
-interface AppProps { }
 
-class App extends React.Component <AppProps, AppState> {
+class App extends React.Component {
   public render() {
     return(
       <BrowserRouter>
