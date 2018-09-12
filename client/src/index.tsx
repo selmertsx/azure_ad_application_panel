@@ -6,14 +6,27 @@ import { render } from "react-dom";
 import { Provider } from 'react-redux';
 import { createStore, Store } from "redux";
 import { toolReducer } from './reducers/tools';
-import { AppContainer } from "./containers/AppContainer";
+import { ToolContainer } from "./containers/ToolContainer";
+import { BrowserRouter, Link, Route } from 'react-router-dom'
+import { TopPage } from './components/TopPage';
 
 const store: Store = createStore(toolReducer);
 
 function renderApp(store: Store) {
   render(
     <Provider store={store}>
-      <AppContainer/>
+      <BrowserRouter>
+        <div>
+          <ul>
+            <li><Link to="/">TopPage</Link></li>
+            <li><Link to="/tools">Tools</Link></li>
+          </ul>
+
+          <hr />
+          <Route exact={true} path='/' component={TopPage}  />
+          <Route path='/tools' component={ToolContainer} />
+        </div>
+      </BrowserRouter>
     </Provider>,
     document.getElementById("root")
   );
