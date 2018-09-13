@@ -4,13 +4,11 @@
 import * as React from "react";
 import { render } from "react-dom";
 import { Provider } from 'react-redux';
-import { createStore, Store } from "redux";
-import { toolReducer } from './reducers/ToolReducer';
+import { Store } from "redux";
 import { ToolContainer } from "./containers/ToolContainer";
 import { BrowserRouter, Link, Route } from 'react-router-dom'
 import { TopPage } from './components/TopPage';
-
-const store: Store = createStore(toolReducer);
+import { store } from "./reducers/root";
 
 function renderApp(store: Store) {
   render(
