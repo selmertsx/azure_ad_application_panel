@@ -5,7 +5,7 @@ import * as React from "react";
 import { render } from "react-dom";
 import { Provider } from 'react-redux';
 import { createStore, Store } from "redux";
-import { toolReducer } from './reducers/tools';
+import { toolReducer } from './reducers/ToolReducer';
 import { ToolContainer } from "./containers/ToolContainer";
 import { BrowserRouter, Link, Route } from 'react-router-dom'
 import { TopPage } from './components/TopPage';
